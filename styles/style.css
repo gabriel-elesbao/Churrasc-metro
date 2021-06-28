@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+main{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    background-color:white
+    
+   
+}
+
+
+
+
+
+.img{
+    
+    /* margin-left: 50px; */
+    margin-top: 20px;
+    height: 600px;
+    width: 800px;
+    background-image: url(https://cdn.dribbble.com/users/1875932/screenshots/4734144/party.jpg);
+    background-size: cover;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 5px 40px ;
+
+}
+
+.text-content{
+    margin-top: 40px;
+    color: rgb(149, 149, 149);
+}
+
+.title{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 450px;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #6469C5;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding:15px;
+    margin-bottom: 15px;
+
+}
+
+label{
+    margin-top: 10px;
+}
+
+button{
+    background-color: #EA6FE1;
+    color: white;
+    font-size: 1.0rem;
+    border: none;
+    padding: 20px;
+    transition: 0.400s;
+    transition-timing-function: ease-out;
+    outline: none;
+}
+
+button:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+   
+}
+
+#resultado{
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    border-top: 1px solid white;
+
+}
+#resultado p{
+    padding: 5px;
+}
+
+@media screen and (max-width:1320px){
+    .container{
+        width: 50%;
+        border-radius: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content{
+        padding-top: 30px;
+        margin: auto;
+        color: rgb(149, 149, 149);
+    }
+
+    .img{
+        border-radius: 0;
+    }
+
+    button{
+        margin-top: 20px;
+    }
+}
+    @media screen and (max-width:700px){
+        html{
+            font-size: 80%;
+           
+
+        }
+        main{
+            overflow-x: hidden;
+            background-color: white;
+        }
+
+        .container{
+            margin: auto;
+            width: 100vw;
+            
+        }
+        .text-content{
+            display: flex;
+            flex-direction: column;
+
+           
+        }
+        
+
+    
+        
+   
+}
+
