@@ -19,10 +19,23 @@ function calcular(){
 
         resultado.innerHTML=`<p>${qtdeTotalCarne/1000} Kg de Carne</p>`
         resultado.innerHTML+=`<p>${Math.ceil(qetdeTotalCerveja/355)} Latas de Cerveja</p>`
-        resultado.innerHTML+=`<p>${Math.ceil(qetdeTotalBebidas/2000)} Pet's 2l de Litros de Bebida</p>`
+       let resultTotal= resultado.innerHTML+=`<p>${Math.ceil(qetdeTotalBebidas/2000)} Pet's 2l de Litros de Bebida</p>`
+
+        if(localStorage.getItem('resultTotal')=== null){
+            localStorage.setItem('resultTotal', '')
+        }
+
+        localStorage.setItem('resultTotal', JSON.stringify(resultTotal))
+      
    
     
 }
+
+function insertTotal(){
+    let oldTotal = JSON.parse(localStorage.getItem('resultTotal'))
+    resultado.innerHTML = oldTotal
+}
+insertTotal()
 
 function carnePp(duracao){
     if(duracao >= 6){
